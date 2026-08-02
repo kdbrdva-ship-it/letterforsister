@@ -49,3 +49,10 @@ p {
     z-index: 2;
     color: #8a5a6b;
 }
+.open {
+    transform: scale(1.05);
+}
+
+.open .heart {
+    opacity: 0;
+}
