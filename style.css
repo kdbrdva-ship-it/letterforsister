@@ -6,45 +6,61 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
+
     background: linear-gradient(
         135deg,
         #ffe5ef,
-        #fff7f2
+        #fff8f3
     );
 
     font-family: "Georgia", serif;
 }
 
 
+/* верхняя надпись */
+
 .intro {
     position: absolute;
-    top: 40px;
+
+    top: 45px;
+
     width: 100%;
+
     text-align: center;
 
     color: #b76e8a;
+
     font-size: 22px;
 
     animation: fadeIn 2s ease;
 }
 
 
+/* сцена */
+
 .scene {
+
     height: 100vh;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     flex-direction: column;
+
 }
 
+
+/* конверт */
 
 .envelope {
 
     position: relative;
 
     width: 330px;
+
     height: 220px;
 
     background: #f8b7c8;
@@ -56,22 +72,28 @@ body {
 
     cursor: pointer;
 
-    transform: translateY(20px);
-
 }
 
+
+/* передняя часть */
 
 .front {
 
     position: absolute;
 
     width: 100%;
+
     height: 100%;
+
 
     display: flex;
 
     justify-content: center;
-    align-items: center;
+
+    align-items: flex-end;
+
+    padding-bottom: 45px;
+
 
     background: #f8b7c8;
 
@@ -81,94 +103,134 @@ body {
 
 }
 
+
 .front h2 {
 
     color: white;
 
-    font-size: 28px;
+    font-size: 30px;
 
     font-weight: normal;
 
-    margin-top: 100px;
+    margin: 0;
 
-    z-index: 2;
+    z-index: 4;
 
 }
 
+
+/* крышка конверта */
 
 .flap {
 
     position: absolute;
 
     top:0;
+
     left:0;
 
+
     width:0;
+
     height:0;
 
+
     border-left:165px solid transparent;
+
     border-right:165px solid transparent;
+
     border-top:110px solid #f3a5bb;
 
+
     transform-origin: top;
+
 
     z-index:4;
 
 }
 
 
+/* сердечная печать */
+
 .seal {
 
     position:absolute;
 
+
     top:35px;
+
     left:50%;
+
 
     transform:translateX(-50%);
 
+
     width:55px;
+
     height:55px;
+
 
     background:#d986a0;
 
+
     border-radius:50%;
+
 
     display:flex;
 
+
     justify-content:center;
+
     align-items:center;
 
+
     font-size:25px;
+
 
     z-index:5;
 
 }
 
 
+/* письмо */
+
 .letter {
+
 
     position:absolute;
 
+
     left:35px;
+
 
     bottom:0;
 
+
     width:260px;
+
 
     height:300px;
 
+
     background:#fffdf8;
+
 
     padding:25px;
 
+
     border-radius:8px;
 
+
     box-shadow:
+
     0 10px 30px rgba(0,0,0,.15);
+
 
     opacity:0;
 
+
     transform:translateY(80px);
+
 
 }
 
@@ -191,6 +253,8 @@ body {
 }
 
 
+/* нижняя подсказка */
+
 .hint {
 
     margin-top:50px;
@@ -200,14 +264,21 @@ body {
 }
 
 
+/* появление */
+
 @keyframes fadeIn {
 
     from {
+
         opacity:0;
+
     }
 
+
     to {
+
         opacity:1;
+
     }
 
 }
