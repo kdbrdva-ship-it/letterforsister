@@ -127,7 +127,7 @@ body {
     z-index:5;
 
 
-    transition:1s ease;
+    transition:1.5s cubic-bezier(.25,.8,.25,1);
 
 }
 
@@ -179,7 +179,7 @@ body {
     z-index:7;
 
 
-    transition:1s ease;
+    transition:1.2s cubic-bezier(.25,.8,.25,1);
 
 }
 
@@ -347,4 +347,8 @@ body {
 
 .envelope.open .seal {
     opacity: 0;
+}
+.show-letter {
+    box-shadow:
+    0 20px 50px rgba(180,100,130,0.25);
 }
