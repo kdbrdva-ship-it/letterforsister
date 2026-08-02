@@ -328,3 +328,23 @@ body {
     }
 
 }
+
+
+/* когда конверт открыт */
+
+.envelope.open .front {
+    transform: translateY(120px);
+    transition: 1s ease;
+}
+
+
+.envelope.open .letter {
+    opacity: 1;
+    transform: translateY(-170px);
+    transition: 1s ease;
+}
+
+
+.envelope.open .seal {
+    opacity: 0;
+}
